@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+long int fact(int n);
+void main()
+{
+int n;
+long int val;
+clrscr();
+printf("Enter the value for n:\n");
+scanf("%d",&n);
+val=fact(n);
+printf("Factorial value=%ld",val);
+getch();
+}
+long int fact(int n)
+{
+if(n<=1)
+return (1);
+else
+return (n*fact(n-1));
+}
